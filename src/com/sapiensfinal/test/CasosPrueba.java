@@ -41,7 +41,7 @@ public class CasosPrueba {
 				Assert.assertEquals(productosMostrados.size(), 4);
 				
 				//Obtener y comparar número de Items y precio
-				System.out.println("El carrito tiene: " + " " + repositorio.totalCarrito().getText() + " Puedes proceder");
+				System.out.println("El carrito tiene: " + " " + repositorio.totalCarrito().getText() + " Carrito vacio");
 				Assert.assertEquals(repositorio.totalCarrito().getText(), "0 item(s) - $0.00");
 				
 				//Agregar a lista lista de deseos y obtener mensaje de error
@@ -52,7 +52,7 @@ public class CasosPrueba {
 				//Agregar Item al carrito y verificar cantidad y Precio
 				repositorio.botonAgregarMac().click();
 				Thread.sleep(2000);
-				System.out.println("El carrito tiene: " + " " + repositorio.totalCarrito().getText());
+				System.out.println("Se agregó: " + " " + repositorio.totalCarrito().getText());
 				Assert.assertEquals(repositorio.totalCarrito().getText(), "1 item(s) - $602.00");		
 	}
 	
@@ -61,11 +61,10 @@ public class CasosPrueba {
 	public void borrarElemento() throws InterruptedException {
 
 		//Inicio del caso 2
-		System.out.println("Ejecución del segundo caso de prueba");
 		
 		//Verificar que hat elementos en el carrito
 		Assert.assertNotEquals(repositorio.totalCarrito().getText(), "0 item(s) - $0.00");
-		System.out.println("El carrito tiene: " + " " + repositorio.totalCarrito().getText() + " Puedes proceder");
+		System.out.println("El carrito contiene: " + " " + repositorio.totalCarrito().getText() );
 		
 		//Eliminar producto de carrito 
 		repositorio.totalCarrito().click();
