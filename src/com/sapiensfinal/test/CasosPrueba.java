@@ -77,4 +77,64 @@ public class CasosPrueba {
 		
 	}
 	
+	@Test(dependsOnMethods= {"borrarElemento"})
+	public void agregarVarios() throws InterruptedException {
+
+		for (int Repeat = 1; Repeat < 4; Repeat++) {
+			
+			if(Repeat == 1 )
+			
+			{
+				repositorio.botonAgregarMac().click();
+				System.out.println("Producto n° "+ Repeat + " Agregado");
+				Thread.sleep(2000);
+				Repeat++;
+			}
+			if (Repeat == 2 )
+			{
+				repositorio.botonAgregarIphone().click();
+				System.out.println("Producto n° "+ Repeat + " Agregado");
+				Thread.sleep(2000);
+				Repeat++;
+			}
+			if (Repeat == 3 )
+			
+			{
+				repositorio.botonAgregarCinema().click();
+				System.out.println("Producto n° "+ Repeat + " Agregado");
+				Thread.sleep(2000);
+				Repeat++;
+			}
+
+	}
+		
+		
+		
+	}
+
+	
+	@Test(dependsOnMethods= {"agregarVarios"})
+	public void validarCarrito() throws InterruptedException {
+
+	
+		//Verificar carrito
+		repositorio.botonListaCarrito().click();
+		Assert.assertTrue(repositorio.vistaProductos().isEnabled());
+		Assert.assertEquals(repositorio.totalCarrito().getText(), "3 item(s) - $847.20");
+		
+		//Ir a la página verificar carrito
+		repositorio.botonVerCarrito().click();
+		Assert.assertEquals(customDriver.getTitle(), "Shopping Cart");
+		
+		WebElement listaCarrito = repositorio.tablaCarrito();
+		List <WebElement> productosAgregados = listaCarrito.findElements(By.className("text-center"));
+		Assert.assertEquals(productosAgregados.size(), 3);
+		System.out.println("Número de productos diferentes agregados al carrito  :" + " " + productosAgregados.size());
+	
+		
+		
+	}
+
+	
+	
 }

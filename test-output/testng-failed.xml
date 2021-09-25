@@ -5,9 +5,11 @@
     <classes>
       <class name="com.sapiensfinal.test.CasosPrueba">
         <methods>
+          <include name="validarCarrito"/>
           <include name="abrirNavegador"/>
           <include name="agregarProducto"/>
           <include name="cerrarNavegador"/>
+          <include name="borrarElemento"/>
         </methods>
       </class> <!-- com.sapiensfinal.test.CasosPrueba -->
     </classes>
