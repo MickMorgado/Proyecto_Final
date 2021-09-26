@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16423" started-at="2021-09-25T15:42:22 CDT" finished-at="2021-09-25T15:42:39 CDT">
+  <suite name="Default suite" duration-ms="17145" started-at="2021-09-25T22:15:34 CDT" finished-at="2021-09-25T22:15:51 CDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16423" started-at="2021-09-25T15:42:22 CDT" finished-at="2021-09-25T15:42:39 CDT">
+    <test name="Default test" duration-ms="17145" started-at="2021-09-25T22:15:34 CDT" finished-at="2021-09-25T22:15:51 CDT">
       <class name="com.sapiensfinal.test.CasosPrueba">
-        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:com.sapiensfinal.test.CasosPrueba@4a3631f8]" name="abrirNavegador" is-config="true" duration-ms="2854" started-at="2021-09-25T15:42:20 CDT" finished-at="2021-09-25T15:42:22 CDT">
+        <test-method status="PASS" signature="abrirNavegador()[pri:0, instance:com.sapiensfinal.test.CasosPrueba@4a3631f8]" name="abrirNavegador" is-config="true" duration-ms="4676" started-at="2021-09-25T22:15:30 CDT" finished-at="2021-09-25T22:15:34 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abrirNavegador -->
-        <test-method status="PASS" signature="agregarProducto()[pri:0, instance:com.sapiensfinal.test.CasosPrueba@4a3631f8]" name="agregarProducto" duration-ms="5023" started-at="2021-09-25T15:42:23 CDT" finished-at="2021-09-25T15:42:28 CDT">
+        <test-method status="PASS" signature="agregarProducto()[pri:0, instance:com.sapiensfinal.test.CasosPrueba@4a3631f8]" name="agregarProducto" duration-ms="4969" started-at="2021-09-25T22:15:34 CDT" finished-at="2021-09-25T22:15:39 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- agregarProducto -->
-        <test-method status="PASS" signature="borrarElemento()[pri:0, instance:com.sapiensfinal.test.CasosPrueba@4a3631f8]" name="borrarElemento" duration-ms="3019" started-at="2021-09-25T15:42:28 CDT" depends-on-methods="com.sapiensfinal.test.CasosPrueba.agregarProducto" finished-at="2021-09-25T15:42:31 CDT">
+        <test-method status="PASS" signature="borrarElemento()[pri:0, instance:com.sapiensfinal.test.CasosPrueba@4a3631f8]" name="borrarElemento" duration-ms="2886" started-at="2021-09-25T22:15:39 CDT" depends-on-methods="com.sapiensfinal.test.CasosPrueba.agregarProducto" finished-at="2021-09-25T22:15:42 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- borrarElemento -->
-        <test-method status="PASS" signature="agregarVarios()[pri:0, instance:com.sapiensfinal.test.CasosPrueba@4a3631f8]" name="agregarVarios" duration-ms="6689" started-at="2021-09-25T15:42:31 CDT" depends-on-methods="com.sapiensfinal.test.CasosPrueba.borrarElemento" finished-at="2021-09-25T15:42:37 CDT">
+        <test-method status="PASS" signature="agregarVarios()[pri:0, instance:com.sapiensfinal.test.CasosPrueba@4a3631f8]" name="agregarVarios" duration-ms="6636" started-at="2021-09-25T22:15:42 CDT" depends-on-methods="com.sapiensfinal.test.CasosPrueba.borrarElemento" finished-at="2021-09-25T22:15:49 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- agregarVarios -->
-        <test-method status="PASS" signature="validarCarrito()[pri:0, instance:com.sapiensfinal.test.CasosPrueba@4a3631f8]" name="validarCarrito" duration-ms="1534" started-at="2021-09-25T15:42:37 CDT" depends-on-methods="com.sapiensfinal.test.CasosPrueba.agregarVarios" finished-at="2021-09-25T15:42:39 CDT">
+        <test-method status="PASS" signature="validarCarrito()[pri:0, instance:com.sapiensfinal.test.CasosPrueba@4a3631f8]" name="validarCarrito" duration-ms="2522" started-at="2021-09-25T22:15:49 CDT" depends-on-methods="com.sapiensfinal.test.CasosPrueba.agregarVarios" finished-at="2021-09-25T22:15:51 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validarCarrito -->
-        <test-method status="PASS" signature="cerrarNavegador()[pri:0, instance:com.sapiensfinal.test.CasosPrueba@4a3631f8]" name="cerrarNavegador" is-config="true" duration-ms="344" started-at="2021-09-25T15:42:39 CDT" finished-at="2021-09-25T15:42:39 CDT">
+        <test-method status="PASS" signature="cerrarNavegador()[pri:0, instance:com.sapiensfinal.test.CasosPrueba@4a3631f8]" name="cerrarNavegador" is-config="true" duration-ms="769" started-at="2021-09-25T22:15:52 CDT" finished-at="2021-09-25T22:15:52 CDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cerrarNavegador -->
